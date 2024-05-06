@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIENVENIDOS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("2.jpg");
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 70%;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 50px;
+            position: relative;
+        }
+        .content {
+            padding: 20px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        fieldset {
+            border: none;
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .red-box {
+            background-color: #ff0000;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #555;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff0000;
+            color: #ffffff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #cc0000;
+        }
+        .circle-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .circle {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ffffff;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .circle:hover {
+            transform: scale(1.2);
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        input[type="radio"]:checked + .circle {
+            background-color: #0f1c8bd3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>BIENVENIDOS</h1>
+            <form action="/procesar_formulario" method="post">
+                <fieldset>
+                    <legend style="color: #000000;">Selecciona una opción:</legend>
+                    <div class="circle-container">
+                        <input type="radio" id="analisis" name="opcion" value="analisis">
+                        <label for="analisis" class="circle"></label> Análisis de sistema
+                    </div>
+                    <div class="circle-container">
+                        <input type="radio" id="produccion" name="opcion" value="produccion">
+                        <label for="produccion" class="circle"></label> Producción agraria
+                    </div>
+                    
+                    <label for="nombre"></label><br>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required><br><br>
+                    
+                    <label for="apellidos"></label><br>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required><br><br>
+                    
+                    <label for="edad"></label><br>
+                    <input type="number" id="edad" name="edad" placeholder="Edad" required><br><br>
+                    
+                    <label for="correo"></label><br>
+                    <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required><br><br>
+                    
+                    <label for="contraseña">:</label><br>
+                    <input type="password" id="contraseña" name="contraseña" placeholder="Contraseña" required><br><br>
+                    
+                    <a href="#">¿Olvidó su contraseña?</a><br><br>
+                    
+                    <input type="checkbox" id="politica" name="politica" required>
+                    <label for="politica">Aceptar la política de privacidad y términos y condiciones</label><br><br>
+                    
+                    <input type="submit" value="Registrarme" class="red-box">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
