@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Ecológico</title>
+    <style>
+        body {
+            background-color: rgb(29, 190, 64);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .img { width: 50%;
+
+        }
+        header {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid white;
+        }
+
+        h1 {
+            color: rgb(233, 233, 233);
+            font-size: 120px;
+            margin-bottom: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            color: rgb(241, 238, 238);
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 70px;
+        }
+
+        .hero p {
+            font-size: 24px;
+            line-height: 1.8;
+            color: azure;
+        }
+
+        .box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        .box h2 {
+            font-size: 70px;
+            color: rgb(241, 238, 238);
+        }
+
+        .box p {
+            font-size: 24px;
+            line-height: 1.8;
+            color: azure;
+        }
+
+        .box img {
+            width: 50%;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
+
+        .box iframe {
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .box button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: white;
+            color: rgb(29, 190, 64);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .box button a {
+            text-decoration: none;
+            color: rgb(29, 190, 64);
+            font-weight: bold;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form label {
+            margin-bottom: 5px;
+            font-size: 18px;
+            color: azure;
+            text-align: left;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-form input, .contact-form textarea, .contact-form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact-form button {
+            background-color: white;
+            color: rgb(29, 190, 64);
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .hero-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+        }
+
+        nav ul li a.box {
+            display: block;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        nav ul li a.box:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mundo Ecológico</h1>
+    </header>
+
+    <main>
+        <section class="hero-box">
+            <div class="hero">
+                <h2>Bienvenido a Mundo Ecológico</h2>
+                <p>Descubre nuestra gama de productos sostenibles</p>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/2FGdCh9F6H0?si=eT7g0ev836h43tEV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <nav>
+            <ul>
+                <li><a href="#home" class="box">Inicio</a></li>
+                <li><a href="#products" class="box">Productos</a></li>
+                <li><a href="#contact" class="box">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <section id="featured-products">
+            <div class="box">
+                <h2>Producto 1</h2>
+                <p>La mejor opción para un futuro sostenible. Este producto está hecho con materiales reciclados y es 100% ecológico.</p>
+                <img src="/imagenes/laguna.jpeg" alt="Producto 1">
+                <button><a href="#">Comprar Ahora</a></button>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/EblXLv-JNqE?si=fvvOjfdteYues0rH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Producto 2</h2>
+                <p>Un producto que combina estilo y sostenibilidad. Perfecto para el hogar ecológico moderno.</p>
+                <img src="/imagenes/relax laptop.jpeg" alt="Producto 2">
+                <button><a href="#">Comprar Ahora</a></button>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/woDBkEIcs9w?si=K6UDfyIJSfw1py6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Producto 3</h2>
+                <p>Ideal para aquellos que buscan una vida más verde. Este producto es orgánico y respetuoso con el medio ambiente.</p>
+                <img src="/imagenes/relax.jpeg" alt="Producto 3">
+                <button><a href="#">Comprar Ahora</a></button>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/gFnVcCTkSpQ?si=74YSkiDp6d_QnXd9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="box">
+            <h2>Formulario de Contacto</h2>
+            <form class="contact-form">
+                <label for="name">Nombre y Apellido:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="dni">Número de DNI:</label>
+                <input type="
+                <input type="text" id="dni" name="dni" required>
+
+                <label for="birthdate">Fecha de Nacimiento:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+
+                <label for="postal-code">Código Postal:</label>
+                <input type="text" id="postal-code" name="postal-code" required>
+
+                <label for="comment">Comentario (100 caracteres):</label>
+                <input type="text" id="comment" name="comment" maxlength="100" required>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mundo Ecológico. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
